@@ -6,7 +6,7 @@ let lastY = null;
 const btnClose = document.getElementById('btnClose');
 
 
-btnClose.addEventListener('click', () => {
+btnClose.addEventListener('mouseover', () => {
     const containerBtns = document.getElementById('btns');
 
     const containerWidth = containerBtns.clientWidth;
