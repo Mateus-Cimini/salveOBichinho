@@ -6,7 +6,7 @@ let lastY = null;
 const btnClose = document.getElementById('btnClose');
 
 
-btnClose.addEventListener('mouseover', () => {
+btnClose.addEventListener('click', () => {
     const containerBtns = document.getElementById('btns');
 
     const containerWidth = containerBtns.clientWidth;
@@ -34,7 +34,7 @@ btnClose.addEventListener('mouseover', () => {
     lastX = randomX;
     lastY = randomY;
 
-    btnClose.style.transition = 'left 0.1s, top 0.1s';
+    btnClose.style.transition = 'left 0.001s, top 0.001s';
     btnClose.style.left = `${randomX}px`
     btnClose.style.top = `${randomY}px`
 })
